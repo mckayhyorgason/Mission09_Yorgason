@@ -37,7 +37,9 @@ function TeamList() {
       {
         team.teams.map((singleTeam) => (
           <>
+            <div className="team-card" key={singleTeam.tid}>
             <Team {...singleTeam} />
+            </div>
             <hr/> 
           </>
         ))
